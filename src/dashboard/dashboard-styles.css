@@ -1,0 +1,13 @@
+.row {
+    border-width: 2px;
+    border-color: red;
+    border-style: solid;
+}
+
+.cell {
+    display: inline-block;
+    margin: 1rem;
+    border-width: 2px;
+    border-color: green;
+    border-style: solid;
+}
