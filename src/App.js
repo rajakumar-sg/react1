@@ -5,8 +5,8 @@ import AddDataForm from './form';
 
 function App() {
   const [data, setData] = useState([
-    {id:1, name: "Raja"},
-    {id:2, name: "Vani"}
+    {id: "1", name: "Raja"},
+    {id: "2", name: "Vani"}
   ]);
   
   const addData = (newRow) => {
