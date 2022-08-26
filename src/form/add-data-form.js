@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Button from "react-bootstrap/Button";
 
 const Input = (props) => {
     return (
@@ -15,7 +16,7 @@ const AddDataForm = (props) => {
 
     const submit = () => {
         if (id.trim() === '' || name.trim() === '') {
-
+            return
         }
         const newRow = {id, name};
         props.onSubmit(newRow);
@@ -27,7 +28,7 @@ const AddDataForm = (props) => {
             <p>Name: <input value={name} onChange={event => setName(event.target.value)}/></p> */}
             <Input label="Id" value={id} setter={setId}/>
             <Input label="Name" value={name} setter={setName}/>
-            <button onClick={submit}>Add Data</button>
+            <Button variant="primary" onClick={submit}>Add Data</Button>
         </div>
     );
 };
